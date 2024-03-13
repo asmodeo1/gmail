@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gmail</title>
+    <style>
+      @font-face {
+        font-family: "Google Sans";
+        font-weight: 100;
+        src: url(https://fonts.gstatic.com/s/googlesans/v58/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvbQoi-E.woff2)
+          format("woff2");
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      body {
+        font-family: "Google Sans";
+        margin:0;
+      }
+      header {
+        background-color: white;
+        background-image: url(imagenes/logo-gmail.png);
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-size: 32px;
+        box-shadow: 0 2px 6px lightgray;
+        position: fixed;
+        width: 100%;
+      }
+      header h1 {
+        font-size: 1.2em;
+        font-weight: light;
+        margin-left: 40px;
+        padding: 10px;
+        float: left;
+        color: gray;
+      }
+      nav {
+        float: right;
+      }
+      nav ul {
+        list-style-type: none;
+      }
+      nav li {
+        display: inline-block;
+        margin-right: 1em;
+      }
+      .boton {
+        border: dodgerblue 1px solid;
+        border-radius: 3px;
+        padding: 10px 20px;
+        font-family: "Google Sans";
+      }
+      .boton-normal {
+        background-color: white;
+        color: dodgerblue;
+      }
+      .boton-normal a {
+        color: dodgerblue;
+      }
+      .boton-normal:hover {
+        background-color: lightgray;
+      }
+      .boton-destacado {
+        background-color: dodgerblue;
+        color: white;
+      }
+      .boton-destacado a {
+        color: white;
+      }
+      .boton a {
+        text-decoration: none;
+      }
+
+      .columna45 {
+        width: 45%;
+        float: left;
+        margin-right: 5%;
+      }
+      .columna45 img {
+        width: 100%;
+      }
+      .columna1-3 {
+        width: 30%;
+        float: left;
+        margin-right: 2%;
+      }
+      #intro, #privacidad {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+      }
+      #intro h2,
+      #privacidad h2 {
+        font-size: 3em;
+      }
+      #intro p,
+      #privacidad p {
+        color: gray;
+        margin: 1.5em 0 3em;
+      }
+      #intro a,
+      #privacidad a {
+        text-decoration: none;
+      }
+      #privacidad .columna div {
+        border-left: 2px solid dodgerblue;
+        padding-left: 20px;
+      }
+      .seleccionado {
+        color: dodgerblue;
+      }
+      #descargas {
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 2em 0;
+      }
+      #descargas a {
+        margin: 0 1em;
+      }
+      .funciona, .conexion, .dispositivos {
+        background-repeat: no-repeat;
+        background-position: left 80px;
+        padding-top: 130px;
+      }
+      .funciona {
+        background-image: url(imagenes/funciona.svg);
+      }
+      .conexion {
+        background-image: url(imagenes/conexion.svg);
+      }
+      .dispositivos {
+        background-image: url(imagenes/dispositivos.svg);
+      }
+      #consejos {
+        background-color: #f8f9fa;
+        margin-top: 4em;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      #workspace {
+        background-image: url(imagenes/aplicaciones.svg);
+        background-repeat: no-repeat;
+        background-position: center 80px;
+        padding-top: 130px;
+        text-align: center;
+      }
+      #workspace h2 {
+        font-size: 2em;
+      }
+      #workspace p:first-of-type {
+        color:gray;
+        font-size: 1.7em;
+        width: 60%;
+        margin: auto;
+      }
+      #workspace p:nth-of-type(2) {
+        color:gray;
+        font-size: 1.2em;
+        width: 50%;
+        margin: 1em auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="clearfix">
+      <h1>Gmail</h1>
+      <nav>
+        <ul>
+          <li class="boton boton-normal"><a href="">Iniciar sesión</a></li>
+          <li class="boton boton-destacado">
+            <a href="" class="">Crea una cuenta</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="intro" class="clearfix">
+        <div class="columna45">
+          <h2>Correo electrónico seguro, inteligente y fácil de usar</h2>
+          <p>
+            Mejora tu productividad con Gmail. Ahora está integrado con Google
+            Chat, Google Meet y otros servicios, por lo que tienes todo en un
+            único lugar.
+          </p>
+          <a href="" class="boton boton-destacado">Crea una cuenta</a>
+        </div>
+        <div class="columna45">
+          <img
+            src="imagenes/intro.webp"
+            alt="Pantalla de la bandeja de entrada de Gmail con iconos de funciones ampliados"
+          />
+        </div>
+      </section>
+      <section id="privacidad" class="clearfix">
+        <div class="columna45">
+          <h2>
+            Correo electrónico seguro y privado que te permite tener el control
+          </h2>
+          <div>
+            <h3 class="seleccionado">Nunca usamos tu contenido de Gmail con fines publicitarios</h3>
+            <p>
+              Gmail usa un sistema de cifrado líder en el sector con todos los
+              mensajes que recibes y envías. Nunca usamos tu contenido de Gmail
+              para personalizar anuncios.
+            </p>
+          </div>
+          <div>
+            <h3>Gmail protege a más de mil millones de usuarios cada día</h3>
+            <p>
+              Gmail bloquea el 99,9 % del spam, del software malicioso y de los
+              enlaces peligrosos para que no lleguen a tu bandeja de entrada.
+            </p>
+          </div>
+          <div>
+            <h3>
+              Las protecciones más avanzadas que hay disponibles contra la
+              suplantación de identidad (phishing)
+            </h3>
+            <p>
+              Cuando llega un correo sospechoso que podría ser legítimo, Gmail
+              te avisa para que tengas el control.
+            </p>
+          </div>
+        </div>
+        <div class="columna45">
+          <img
+            src="imagenes/privacidad.png"
+            alt="Pantalla de la bandeja de entrada de Gmail con iconos de funciones ampliados"
+          />
+        </div>
+      </section>
+      <section id="descargas">
+        <h3>Lleva lo mejor de Gmail a tu dispositivo</h3>
+        <a href=""><img src="imagenes/descarga_ios.svg" alt="Obtén app Gmail en App Store"></a>
+        <a href=""><img src="imagenes/descarga_android.svg" alt="Obtén app Gmail en App Store"></a>
+      </section>
+      <section id="consejos" class="clearfix">
+        <div class="columna1-3 funciona">
+            <h2>Funciona con otras herramientas</h2>
+            <p>Gmail funciona perfectamente con clientes de escritorio como Microsoft Outlook, Apple Mail y Mozilla Thunderbird, incluida la sincronización de contactos y de eventos.</p>
+        </div>
+        <div class="columna1-3 conexion">
+            <h2>Consigue mantener tu productividad, incluso sin conexión</h2>
+            <p>Gmail sin conexión te permite leer, responder, eliminar y buscar mensajes de Gmail aunque hayas perdido la conexión a Internet.</p>
+        </div>
+        <div class="columna1-3 dispositivos">
+            <h2>Usa Gmail en cualquier dispositivo</h2>
+            <p>Disfruta de la facilidad y de la sencillez de Gmail desde cualquier lugar.</p>
+        </div>
+      </section>
+      <section id="workspace">
+        <h2>Ahora Gmail forma parte de Google Workspace</h2>
+        <p>Colabora más rápido desde cualquier dispositivo, en cualquier momento, y con todo en un mismo lugar.</p>
+        <p>Google Workspace es un conjunto de herramientas de productividad y colaboración que ayudan a las personas, equipos y negocios a estar al corriente de todo. Se trata de una solución innovadora y flexible para uso empresarial o personal que incluye todas tus aplicaciones favoritas, como Gmail, Calendar, Drive, Documentos, Meet y más.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
